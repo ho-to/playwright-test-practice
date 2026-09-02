@@ -1,0 +1,7 @@
+{
+  "name": "playwright-test",
+  "version": "1.0.0",
+  "deDependencies":{
+    "@playwright/test": "^1.40.0"
+  }
+}
