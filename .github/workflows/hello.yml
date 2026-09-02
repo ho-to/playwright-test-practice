@@ -7,7 +7,7 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      -name:Show Message
+      - name: Show Message
         run: echo "GitHub Actions worked!"
 
 
