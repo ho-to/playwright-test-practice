@@ -1,8 +1,9 @@
-import{ test, epect) from '@playwright/test';
-test('example.comが表示される', async ({page}) => {
-  await page.goto('https:example.com');
+import { test, expect } from '@playwright/test';
 
-     await expect(page).toHaveTitle('Example Domain');
+test('example.comが表示される', async ({ page }) => {
+  await page.goto('https://example.com');
 
-     await expect(page.locator('1')).toHAvaText('Example Domain');
+  await expect(page).toHaveTitle('Example Domain');
+
+  await expect(page.locator('h1')).toHaveText('Example Domain');
 });
